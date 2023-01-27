@@ -24,32 +24,27 @@ const test = apparts[7];
 
 // import Space from './composants/space';
 
-const CollapseListElms = ["Climatisation", "Wi-Fi", "Cuisine", "Espace de travail", "Fer à repasser", "Sèche-cheveux Cintres"];
+//const CollapseListElms = ["Climatisation", "Wi-Fi", "Cuisine", "Espace de travail", "Fer à repasser", "Sèche-cheveux Cintres"];
 
 function App() {
   return (
     <div className="App">
+      <div className='header'>
+        <Header />
+      </div>
+      <div className='body'>
 
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Edit here
-        </a>
-      </header>
-      {/* <div className='App-body'>
-        
-      </div> */}
-      <Tag title="Murphy" />
+      </div>
+
+
+
+
+
+
+
+      {/* <Tag title="Murphy" />
       <Thumb title="Titre de la location" />
-      <CollapseList title="Equipements" list={CollapseListElms} />
+      <CollapseList title="Equipements" list={test.equipments} />
       <CollapseInfo title="Fidélité" message="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
       <Tag title="Murphy" />
       <Header />
@@ -59,7 +54,7 @@ function App() {
       <Host host={test.host} />
       <Title title={test.title} location={test.location} />
       <Tags tags={test.tags} id={test.id} />
-      <Gallery nbImages={test.pictures.length} pictures={test.pictures} />
+      <Gallery nbImages={test.pictures.length} pictures={test.pictures} /> */}
 
       {/* <Space /> */}
     </div>

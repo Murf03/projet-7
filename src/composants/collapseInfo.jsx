@@ -11,9 +11,8 @@ export default class CollapseInfo extends React.Component {
             isToggleOn: true,
             messageHeight: 0
         };
-
+        this.pRef = createRef();
         this.handleClick = this.handleClick.bind(this);
-        this.messageRef = createRef();
     }
     handleClick() {
         this.setState(prevState => ({
@@ -22,10 +21,12 @@ export default class CollapseInfo extends React.Component {
     }
 
     componentDidMount() {
-        const height = document.getElementById('collapseMsg').clientHeight;
-        if (height != null && height > this.state.messageHeight) {
+        const pHeight = this.pRef.current.clientHeight;
+        // console.log("via ref : " + pHeight);
+        if (pHeight != null && pHeight > this.state.messageHeight) {
             this.setState(prevState => ({
-                messageHeight: height,
+                messageHeight: pHeight,
+                isToggleOn: false
             }));
         }
     }
@@ -40,7 +41,7 @@ export default class CollapseInfo extends React.Component {
                 </button>
             </div>
             <div style={{ height: this.state.isToggleOn ? botBarHeight : "0px" }} className={this.state.isToggleOn ? 'bot-bar-ci' : 'collapsed-info'}>
-                <p id='collapseMsg'>{this.props.message}</p>
+                <p ref={this.pRef} id='collapseMsg'>{this.props.message}</p>
             </div>
         </div>
     }

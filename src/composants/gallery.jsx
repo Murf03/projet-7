@@ -12,8 +12,6 @@ export default class Gallery extends React.Component {
             position: 0,
             last: props.nbImages - 1,
         };
-
-        //this.handleClickRight = this.handleClickRight.bind(this);
     }
 
     handleClickRight(dir) {

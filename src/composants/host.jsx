@@ -2,10 +2,6 @@ import React from 'react';
 
 import './composants.css';
 
-// function NavEl(infos) {
-//     return <a className='nav-elm' href={infos.link}>{infos.name}</a>
-// }
-
 export default function Host(props) {
     const host = props.host;
     const names = host.name.split(" ");
