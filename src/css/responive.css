@@ -1,0 +1,364 @@
+/* Responsive CSS */
+
+@media (max-width: 961px) {
+
+    /* Header */
+    .header {
+        height: 50px;
+    }
+
+    .logo {
+        width: 130px;
+        height: 50px;
+    }
+
+    .nav {
+        column-gap: 10px;
+    }
+
+    .nav-elm {
+        font-size: 12px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+
+
+
+    /* Home Slogan */
+    .home-slogan {
+        margin-top: 0px;
+        margin-bottom: 25px;
+        height: 110px;
+        background-position: 48% 52%;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .home-slogan>div {
+        border-radius: 10px;
+    }
+
+    .home-slogan>div>p {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 24px;
+        line-height: 24px;
+        border-radius: 10px;
+    }
+
+
+
+    /* Thumbs */
+    .thumb {
+        width: 100%;
+        height: 255px;
+    }
+
+    .thumbs {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: transparent;
+        row-gap: 20px;
+        column-gap: 60px;
+        flex-wrap: wrap;
+        border-radius: 0px;
+        margin-bottom: 20px;
+    }
+
+
+
+    /* About Slogan */
+    .about-slogan {
+        margin-top: -10px;
+        margin-bottom: 25px;
+        height: 225px;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+
+
+    /* CollapseList */
+    .collapse-list {
+        width: 100%;
+        min-height: 45px;
+        margin-bottom: -15px;
+    }
+
+    .collapse-list>div {
+        border-radius: 5px;
+    }
+
+    .collapse-list>.top-bar-cl {
+        height: 35px;
+    }
+
+    .top-bar-cl>p {
+        height: 35px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .top-bar-cl>button>img {
+        width: 20px;
+        height: 10px;
+    }
+
+    .collapse-list>.bot-bar-cl {
+        padding-left: 10px;
+    }
+
+    .bot-bar-cl>p {
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 0px;
+    }
+
+    .collapsed-list>p {
+        font-size: 13px;
+        line-height: 17px;
+        padding-top: 0px;
+    }
+
+
+
+    /* CollapseInfo */
+    .collapse-info {
+        position: relative;
+        width: 100%;
+        min-height: 45px;
+        margin-bottom: -15px;
+    }
+
+    .collapse-info>.top-bar-ci {
+        height: 30px;
+        align-items: center;
+    }
+
+    .top-bar-ci>p {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    .top-bar-ci>button>img {
+        width: 15px;
+        height: 15px;
+        margin-top: 2.5px;
+    }
+
+
+    .collapse-info>.bot-bar-ci {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    #collapse-msg {
+        margin: 0px;
+        padding: 0px;
+        padding-left: 0px;
+        padding-bottom: 40px;
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .collapsables {
+        row-gap: 20px;
+    }
+
+
+
+    /*  Gallery  */
+    .gallery {
+        width: 100%;
+        height: 255px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .gallery-display {
+        border-radius: 10px;
+
+    }
+
+    .gallery>button>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .gallery>button {
+        width: 25px;
+        height: 25px;
+        border-radius: 12.5px;
+        top: calc(50% - 12.5px);
+    }
+
+    .gallery-prev {
+        left: 0px;
+    }
+
+    .gallery-next {
+        right: 0px;
+    }
+
+    .gallery>.indications {
+        display: none;
+    }
+
+
+
+    /*  Titre et lieu  */
+    .title {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 10px;
+
+    }
+
+    .loc-title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .loc-location {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    /* Tags */
+    .tag {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .tags {
+        margin-bottom: 15px;
+    }
+
+
+
+    /*  Stars  */
+    .stars {
+        width: fit-content;
+        column-gap: 5px;
+        height: 15px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .star {
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+    /*  Host  */
+    .host {
+        margin-bottom: 0px;
+        height: 100%;
+    }
+
+    .host>p {
+        font-size: 12px;
+        line-height: 17px;
+        white-space: pre-wrap;
+    }
+
+    .host>img {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+
+
+
+    /*  Appart  */
+    .details {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .right-bottom {
+        height: 32px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .collapse-desc {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        row-gap: 20px;
+    }
+
+
+
+    /* About */
+    .about {
+        margin-bottom: 30px;
+    }
+
+
+
+    /* Error Page */
+    .error-page {
+        height: 100%;
+        background-color: antiquewhite;
+    }
+
+    .error-code {
+        margin-top: 120px;
+        font-size: 96px;
+        line-height: 137px;
+        background-color: aqua;
+    }
+
+    .error-msg {
+        width: 80%;
+        font-size: 18px;
+        line-height: 26px;
+
+        text-align: center;
+        background-color: blue;
+    }
+
+    .go-back-home {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        margin-top: 100px;
+        margin-bottom: 70px;
+
+        color: #FF6060;
+    }
+
+
+
+    /*  Footer  */
+    .footer>p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}

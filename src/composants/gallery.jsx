@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './composants.css';
+import '../css/composants.css';
 import BtnIcon from "../images/collapse.svg";
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Logo } from '../logo.svg';
+import { ReactComponent as Logo } from '../images/logo.svg';
 
-import './composants.css';
+import '../css/composants.css';
 
 
 export default function Header(props) {
@@ -12,12 +12,16 @@ export default function Header(props) {
 
     const currentPage = "nav-elm nav-selected";
     const otherPages = "nav-elm";
+    const baseUrl = '/projet-7/';
+    const aboutUrl = baseUrl + 'about';
+    let logoViewBox = "0 0 210 70";
+
 
     return <div className='header'>
-        <Logo fill='#FF6060' width={210} height={60} stroke='#FF6060' />
+        <Logo className='logo' viewBox={logoViewBox} />
         <nav className='nav'>
-            <Link onClick={() => props.click(0)} className={pos === 0 ? currentPage : otherPages} to="/">Accueil</Link>
-            <Link onClick={() => props.click(1)} className={pos === 1 ? currentPage : otherPages} to="/about">A propos</Link>
+            <Link onClick={() => props.click(0)} className={pos === 0 ? currentPage : otherPages} to={baseUrl}>Accueil</Link>
+            <Link onClick={() => props.click(1)} className={pos === 1 ? currentPage : otherPages} to={aboutUrl}>A propos</Link>
         </nav>
     </div>
 

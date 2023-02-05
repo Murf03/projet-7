@@ -1,6 +1,6 @@
 import React, { createRef } from 'react';
 
-import './composants.css';
+import '../css/composants.css';
 import CollapseDown from "../images/collapse.svg";
 
 export default class CollapseInfo extends React.Component {
@@ -41,7 +41,7 @@ export default class CollapseInfo extends React.Component {
                 </button>
             </div>
             <div style={{ height: this.state.isToggleOn ? botBarHeight : "0px" }} className={this.state.isToggleOn ? 'bot-bar-ci' : 'collapsed-info'}>
-                <p ref={this.pRef} id='collapseMsg'>{this.props.message}</p>
+                <p ref={this.pRef} id='collapse-msg'>{this.props.message}</p>
             </div>
         </div>
     }

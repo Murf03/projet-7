@@ -3,7 +3,7 @@ import React from 'react';
 
 import { ReactComponent as Logo } from '../images/star.svg';
 
-import './composants.css';
+import '../css/composants.css';
 
 export default function Stars(props) {
     const emptyStar = "#E3E3E3";

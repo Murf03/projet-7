@@ -1,6 +1,6 @@
 import React, { createRef } from 'react';
 
-import './composants.css';
+import '../css/composants.css';
 import CollapseDown from "../images/collapse.svg";
 
 export default class CollapseList extends React.Component {
@@ -17,6 +17,7 @@ export default class CollapseList extends React.Component {
         this.pRef = createRef();
         this.handleClick = this.handleClick.bind(this);
     }
+
     handleClick() {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
@@ -38,7 +39,12 @@ export default class CollapseList extends React.Component {
     render() {
         const nl = "\n";
         //List
-        const botBarHeight = (this.props.list.length * 20) + 20 + "px";
+        const isMobile = window.screen.width < 961 ? true : false;
+        console.log('je suis mobile ? : ' + isMobile);
+        const pH = 20;
+        const paddingToAdd = !isMobile ? (pH + 5) : -25;
+        console.log("paddingToAdd : " + paddingToAdd);
+        const botBarHeight = (this.props.list.length * pH) + paddingToAdd + "px";
         let botBar = (<div style={{ height: this.state.isToggleOn ? botBarHeight : "0px" }} className={this.state.isToggleOn ? 'bot-bar-cl' : 'collapsed-list'}>{this.props.list.map(e =>
             <p key={e} style={{ height: this.state.isToggleOn ? "20px" : "0px" }}>{e + " " + nl}</p>
         )}</div>);

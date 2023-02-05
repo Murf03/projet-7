@@ -1,18 +1,12 @@
-/* Le CSS des composants */
+/* Le CSS global (desktop first) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat';
 }
 
-/* Spacer */
-.space {
-    position: relative;
-    display: block;
-    height: 350px;
-    width: 300px;
-    background-color: antiquewhite;
-}
 
 /* Header */
 .header {
@@ -24,21 +18,26 @@
     height: 70px;
 }
 
+.logo {
+    fill: #FF6060;
+    width: 210px;
+    height: 70px;
+    stroke: #FF6060;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: fit-content;
+    column-gap: 60px;
 }
 
 .nav-elm {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
-    margin-left: 60px;
-
     display: flex;
     align-items: flex-end;
     text-align: right;
@@ -410,6 +409,7 @@
     width: 100%;
     height: 225px;
     background-image: url("../images/home-slogan.jpg");
+    background-position: 55% 45%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 25px;
@@ -453,7 +453,8 @@
 .about-slogan {
     width: 100%;
     height: 225px;
-    background-image: url("../images/about-slogan.jpg");
+    background-image: url("../images/about.jpg");
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 25px;
@@ -464,9 +465,9 @@
 .about-slogan>div {
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: 1;
-    mix-blend-mode: lighten;
+    background-color: #fff;
+    opacity: 0.3;
+    mix-blend-mode: darken;
     border-radius: 25px;
     color: #fff;
     backdrop-filter: opacity(70%);
@@ -781,7 +782,7 @@
     align-items: flex-end;
     text-decoration-line: underline;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
     color: #FF6060;
 }

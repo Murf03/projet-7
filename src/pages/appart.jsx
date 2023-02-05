@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import "../composants/composants.css";
+import "../css/composants.css";
 import ErrorPage from './errorPage';
 import Gallery from '../composants/gallery';
 import Tags from '../composants/tags';
@@ -27,16 +27,6 @@ export default function Appart(props) {
             break;
         }
     }
-    // console.log("idExist :" + idExist);
-
-    // if (!idExist) {
-    //     const toThrow = JSON.stringify(
-    //         { message: "Page inconnue" },
-    //         { status: 404 }
-    //     );
-    //     // console.log(toThrow);
-    //     throw toThrow;
-    // }
 
     return idExist ? <div className='appart'>
         <Gallery nbImages={appart.pictures.length} pictures={appart.pictures} />

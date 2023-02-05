@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './composants.css';
+import '../css/composants.css';
 
 export default function HomeSlogan(props) {
     return <div className='home-slogan'>

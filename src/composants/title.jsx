@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './composants.css';
+import '../css/composants.css';
 
 export default function Title(props) {
     return <div className='title'>

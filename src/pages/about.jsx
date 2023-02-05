@@ -1,5 +1,5 @@
 import React from 'react';
-import "../composants/composants.css";
+import "../css/composants.css";
 import AboutSlogan from '../composants/aboutSlogan';
 import CollapseInfo from '../composants/collapseInfo';
 
