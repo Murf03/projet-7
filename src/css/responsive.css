@@ -29,12 +29,13 @@
         margin-top: 0px;
         margin-bottom: 25px;
         height: 110px;
-        background-position: 48% 52%;
-        background-size: cover;
         border-radius: 10px;
+        overflow: hidden;
     }
 
     .home-slogan>div {
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
     }
 
@@ -50,7 +51,8 @@
 
     /* Thumbs */
     .thumb {
-        max-width: 380px;
+        width: 100%;
+        max-width: 384px;
         height: 280px;
     }
 
