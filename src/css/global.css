@@ -426,11 +426,12 @@
     justify-content: center;
     align-items: center;
     border: none;
+    overflow: hidden;
 }
 
 .home-slogan>div {
-    width: 100%;
-    min-width: 100%;
+    width: 250%;
+    min-width: 250%;
     height: 100%;
     background-color: #000;
     background-size: cover;
@@ -700,6 +701,10 @@
     width: 100%;
     height: 210px;
     row-gap: 30px;
+}
+
+.footer_logo {
+    cursor: pointer;
 }
 
 .footer>p {
