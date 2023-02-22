@@ -50,8 +50,8 @@
 
     /* Thumbs */
     .thumb {
-        width: 100%;
-        height: 255px;
+        max-width: 380px;
+        height: 280px;
     }
 
     .thumbs {
@@ -210,6 +210,11 @@
 
     .gallery-next {
         right: 0px;
+    }
+
+    .gallery>button:hover>img {
+        padding-top: 10px;
+        transition: all 400ms linear;
     }
 
     .gallery>.indications {
