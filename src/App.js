@@ -29,7 +29,6 @@ class App extends React.Component {
   }
 
   hasClicked(id) {
-    console.log("current : " + id);
     this.setState((prevState) => ({
       position: id,
     }));
